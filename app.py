@@ -21,5 +21,9 @@ def hello():
     count = get_hit_count()
     return "Welcome to this awesome page! You've visited me {} times.\n".format(count)
 
+@app.route('/healthcheck')
+def healthcheck():
+    return "OK"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
