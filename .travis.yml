@@ -6,7 +6,7 @@ services:
   - docker
 
 jdk:
-  - oraclejdk10
+  - openjdk10
 
 script:
   - ./gradlew build -s
