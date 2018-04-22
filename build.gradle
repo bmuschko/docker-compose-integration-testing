@@ -3,8 +3,8 @@ plugins {
     id 'com.avast.gradle.docker-compose' version '0.7.1'
 }
 
-sourceCompatibility = 10
-targetCompatibility = 10
+sourceCompatibility = 9
+targetCompatibility = 9
 
 dockerCompose {
     useComposeFiles = ['docker-compose.yml']
