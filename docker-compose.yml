@@ -1,6 +1,6 @@
 version: "3.6"
 services:
-  web-fe:
+  web:
     build: .
     command: python app.py
     ports:
