@@ -12,9 +12,9 @@ import java.net.URI;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ApplicationIntegrationTest {
-	private static final String WEB_SERVICE_HOST = System.getProperty("web.host");
-	private static final Integer WEB_SERVICE_PORT = Integer.getInteger("web.tcp.5000");
-	private static final String WEB_SERVICE_URI = "http://" + WEB_SERVICE_HOST + ":" + WEB_SERVICE_PORT + "/";
+    private static final String WEB_SERVICE_HOST = System.getProperty("web.host");
+    private static final Integer WEB_SERVICE_PORT = Integer.getInteger("web.tcp.5000");
+    private static final String WEB_SERVICE_URI = "http://" + WEB_SERVICE_HOST + ":" + WEB_SERVICE_PORT + "/";
 
     @ParameterizedTest(name = "can resolve application URL {0} times and receive correct count")
     @ValueSource(ints = { 1, 2, 3 })

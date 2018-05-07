@@ -9,7 +9,7 @@ targetCompatibility = 9
 dockerCompose {
     useComposeFiles = ['docker-compose.yml']
     isRequiredBy(project.tasks.test)
-	exposeAsSystemProperties(project.tasks.test)
+    exposeAsSystemProperties(project.tasks.test)
 }
 
 def httpclientModuleJvmArg = '--add-modules=jdk.incubator.httpclient'
